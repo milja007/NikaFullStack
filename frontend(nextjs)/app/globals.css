@@ -1,0 +1,68 @@
+/* app/globals.css */
+
+/* Define CSS variables for the light theme */
+:root {
+  /* App container */
+  --app-bg-color: #ffffff;
+  --text-color: #333333;
+  --app-border-color: #e0e0e0;
+
+  /* Headings */
+  --heading-color: #2c3e50;
+  --category-heading-color: #34495e;
+  --category-border-color: #dcdcdc;
+
+  /* Quiz items */
+  --item-bg-color: #f9f9f9;
+  --item-border-color: #eeeeee;
+  --item-hover-bg-color: #f0f0f0;
+  --item-hover-border-color: #dddddd;
+  --item-text-color: #444444;
+
+  /* Checkbox */
+  --checkbox-border-color: #cccccc;
+  --checkbox-checked-bg-color: #007bff;
+  --checkbox-checkmark-color: #ffffff;
+
+  /* Tags and Scores */
+  --removable-tag-color: #7f8c8d;
+  --item-score-color: #007bff;
+
+  /* Buttons */
+  --button-text-color: #ffffff;
+  --button-bg-color: #007bff;
+  --button-hover-bg-color: #0056b3;
+  /* You might want a separate variable for the download button if its colors differ significantly */
+  --download-button-bg-color: #28a745;
+  --download-button-hover-bg-color: #1e7e34;
+
+  /* Results */
+  --result-text-color: #155724;
+  --result-bg-color: #d4edda;
+  --result-border-color: #c3e6cb;
+
+  /* Global body styles (optional, but good to have) */
+  --body-bg-color: #f4f6f8;
+  --global-font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+body {
+  margin: 0;
+  font-family: var(--global-font-family);
+  background-color: var(--body-bg-color);
+  color: var(--text-color); /* Default text color for the body */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Basic reset and global settings */
+* {
+  box-sizing: border-box;
+}
+
+/* Ensure h1, h3 from page.module.css use the variables correctly */
+/* No need to redefine h1, h3 here if they are only used within page.module.css context */
+/* However, if you want global h1, h3 styles, define them here. */
+/* For now, assuming h1, h3 in page.module.css will correctly pick up the variables. */

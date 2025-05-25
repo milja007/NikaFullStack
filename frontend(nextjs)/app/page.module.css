@@ -1,0 +1,173 @@
+/* app/your-route-folder/page.module.css */
+
+/* Basic styling for the main app container using variables */
+.App {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  font-family: "Inter", sans-serif;
+  background-color: var(--app-bg-color);
+  color: var(--text-color);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--app-border-color);
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Styling for the main heading (h1) when inside an element with class .App */
+.App h1 {
+  /* MODIFIED: Prepended with .App */
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--heading-color);
+  font-size: 2em;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Styling for category headings (h3) when inside an element with class .App */
+.App h3 {
+  /* MODIFIED: Prepended with .App */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: var(--category-heading-color);
+  border-bottom: 1px solid var(--category-border-color);
+  padding-bottom: 5px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Container for quiz items */
+.quizContainer {
+  /* Assuming you want camelCase: .quizContainer, if CSS has .quiz-container use that */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Styling for individual quiz items (labels) using variables */
+.quizItem {
+  /* Assuming camelCase: .quizItem */
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background-color: var(--item-bg-color);
+  border: 1px solid var(--item-border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover effect for quiz items using variables */
+.quizItem:hover {
+  background-color: var(--item-hover-bg-color);
+  border-color: var(--item-hover-border-color);
+}
+
+/* Style the checkbox using variables */
+.quizItem input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--checkbox-border-color);
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Style the checkbox when checked using variables */
+.quizItem input[type="checkbox"]:checked {
+  background-color: var(--checkbox-checked-bg-color);
+  border-color: var(--checkbox-checked-bg-color);
+}
+
+/* Create a custom checkmark using variables */
+.quizItem input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--checkbox-checkmark-color);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Styling for the quiz item text using variables */
+.itemText {
+  /* Assuming camelCase: .itemText */
+  flex: 1;
+  color: var(--item-text-color);
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+/* Styling for the removable tag using variables */
+.removableTag {
+  /* Assuming camelCase: .removableTag */
+  font-size: 0.8em;
+  color: var(--removable-tag-color);
+  margin-left: 5px;
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+
+/* Styling for the item score using variables */
+.itemScore {
+  /* Assuming camelCase: .itemScore */
+  font-weight: bold;
+  color: var(--item-score-color);
+  flex-shrink: 0;
+  transition: color 0.3s ease;
+}
+
+/* Styling for the submit button using variables */
+.submitBtn {
+  /* Assuming camelCase: .submitBtn */
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  color: var(--button-text-color);
+  background-color: var(--button-bg-color);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for the submit button using variables */
+.submitBtn:hover {
+  background-color: var(--button-hover-bg-color);
+  transform: translateY(-2px);
+}
+
+/* Active state for the submit button */
+.submitBtn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the result display using variables */
+.result {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--result-text-color);
+  padding: 15px;
+  background-color: var(--result-bg-color);
+  border-radius: 8px;
+  border: 1px dashed var(--result-border-color);
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
