@@ -1,0 +1,1 @@
+# Mini full stack project to get familiar with postgres and go by remaking my react project in nextjs and than implementing backend to it. I used nextjs for this only because i think i would be working with it mostly to practice Rquery but now i think it would be better just using react but nvm i did what i planned to do so here it is . ;)
